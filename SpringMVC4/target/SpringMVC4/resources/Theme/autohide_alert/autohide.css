@@ -1,0 +1,65 @@
+﻿.success{
+background:url("success.png") no-repeat 8px 6px #DFF2BF;
+color:#333333;
+padding:0 0 6px 50px;
+border: 1px solid #5E9107;
+min-height: 36px;
+}
+
+.error{
+background:url("error.png") no-repeat 8px 6px #FFBABA;
+color:#333333;
+padding:0 0 6px 50px;
+border: 1px solid #D6010E;
+min-height: 36px;
+}
+
+.warning{
+background:url("warning.png") no-repeat 8px 6px #FEEFB3;
+color:#333333;
+padding:0 0 6px 50px;
+border: 1px solid #9F6000;
+min-height: 36px;
+}
+
+.info{
+background:url("Information.png") no-repeat 8px 6px #BDE5F8;
+color:#333333;
+padding:0 0 6px 50px;
+border: 1px solid #00529B;
+min-height: 36px;
+}
+
+.message-box{
+position:relative;
+padding: 0 16px 0 0;
+}
+
+.message-box .close{
+position:absolute;
+right:6px;
+top:2px;
+width:10px;
+height:10px;
+}
+
+.message-box .content{
+padding:4px;
+text-align:left;
+font-size:12px;
+text-align:justify;
+vertical-align: central;
+}
+
+.message-box .close{
+cursor:pointer;
+background:url("close.gif") no-repeat scroll 0 0;
+width:14px;
+height:14px;
+}
+
+.message-box .time{
+font-size:10px;
+width:30px;
+float:right;
+}

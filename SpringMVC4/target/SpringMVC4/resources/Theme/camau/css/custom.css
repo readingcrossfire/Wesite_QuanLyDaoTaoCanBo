@@ -1,0 +1,28 @@
+
+.cyan-text{
+  color: #0097A7;  
+}
+.red-text {
+    color:#FF5252;
+}
+.c-content-padding {padding: 7px}
+.c-card-header {
+    border-bottom: 1px solid #009688;
+    text-transform: uppercase;
+    font-family: Roboto,Helvetica Neue,sans-serif;
+    padding: 7px;
+    font-size: 15px;
+}
+.c-card-header .md-title{
+    font-size: 17px;
+}
+.c-input-height {
+    height: 35px
+}
+.c-sub-title {
+    font-weight: bold;
+    margin-top: 10px;
+}
+md-divider.c-dashed {
+    border-top-style: dashed;
+}

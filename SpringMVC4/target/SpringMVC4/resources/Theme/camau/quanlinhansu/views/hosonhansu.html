@@ -1,0 +1,439 @@
+ <section layout="row" layout-sm="column" layout-align="left" layout-wrap>
+        <md-button><i class="material-icons c-icon-refresh cyan-text">save</i> Lưu</md-button>
+        <md-button><i class="material-icons c-icon-refresh cyan-text">settings</i> Thiết lập ngầm định</md-button>
+        <md-button><i class="material-icons c-icon-refresh red-text">clear</i> Hủy bỏ</md-button>
+</section>
+<md-divider></md-divider>
+<md-content md-scroll-y layout="column" layout-padding style="height:550px">
+    <div flex >
+        <md-content>
+            <md-card md-theme="dark-blue" md-theme-watch> 
+                <md-card-header class="c-card-header">
+                    <md-card-header-text>
+                      <span class="md-title">Thông tin chung</span>
+                    </md-card-header-text>
+                </md-card-header>
+                <md-card-content class="c-content-padding">
+                    <div layout-gt-sm="row">
+                        <md-input-container class="md-block c-input-height" flex-gt-sm>
+                          <label>Mã NV</label>
+                          <input ng-model="user.city">
+                        </md-input-container>
+                        <md-input-container class="md-block c-input-height" flex-gt-sm>
+                          <label>Họ tên</label>
+                          <input ng-model="user.city">
+                        </md-input-container>    
+                        <md-input-container class="md-block c-input-height" flex-gt-sm>
+                          <label>Giới tính</label>
+                          <input ng-model="user.city">
+                        </md-input-container>
+                        <md-input-container class="md-block c-input-height" flex-gt-sm>
+                           <md-datepicker ng-model="ctrl.myDate" md-placeholder="Ngày Sinh"></md-datepicker>
+                        </md-input-container>
+                        
+                        
+                    </div> 
+                    <div layout-gt-sm="row">
+                        <md-input-container class="md-block c-input-height" flex-gt-sm>
+                          <label>Nơi sinh</label>
+                          <input ng-model="user.city">
+                        </md-input-container>
+                        <md-input-container class="md-block c-input-height" flex-gt-sm>
+                          <label>Nguyên quán</label>
+                          <input ng-model="user.city">
+                        </md-input-container>
+                        <md-input-container class="md-block c-input-height" flex-gt-sm>
+                          <label>Thuộc tỉnh</label>
+                          <input ng-model="user.city">
+                        </md-input-container>
+                    </div> 
+                    
+                    <div layout-gt-sm="row">
+                        <div flex-gt-sm class="c-sub-title">
+                            Chứng minh nhân dân/Thẻ căn cước
+                        </div>
+                        <div flex-gt-sm class="c-sub-title">
+                            Hộ chiếu
+                        </div>
+                    </div>
+                    <md-divider class="c-dashed"></md-divider>
+                    <div layout-gt-sm="row">
+                        <md-input-container class="md-block c-input-height" flex-gt-sm>
+                          <label>Số CMT</label>
+                          <input ng-model="user.city">
+                        </md-input-container>
+                        <md-input-container class="md-block c-input-height" flex-gt-sm>
+                           <md-datepicker ng-model="ctrl.myDate" md-placeholder="Ngày cấp"></md-datepicker>
+                        </md-input-container>
+                        <md-input-container class="md-block c-input-height" flex-gt-sm>
+                          <label>Số hộ chiếu</label>
+                          <input ng-model="user.city">
+                        </md-input-container>
+                        <md-input-container class="md-block c-input-height" flex-gt-sm>
+                           <md-datepicker ng-model="ctrl.myDate" md-placeholder="Ngày cấp"></md-datepicker>
+                        </md-input-container>
+                    </div> 
+                    <div layout-gt-sm="row">
+                        <md-input-container class="md-block c-input-height" flex-gt-sm>
+                          <label>Nơi cấp</label>
+                          <input ng-model="user.city">
+                        </md-input-container>
+                        <md-input-container class="md-block c-input-height" flex-gt-sm>
+                           <md-datepicker ng-model="ctrl.myDate" md-placeholder="Ngày hết hạn"></md-datepicker>
+                        </md-input-container>
+                        <md-input-container class="md-block c-input-height" flex-gt-sm>
+                          <label>Nơi cấp</label>
+                          <input ng-model="user.city">
+                        </md-input-container>
+                        <md-input-container class="md-block c-input-height" flex-gt-sm>
+                           <md-datepicker ng-model="ctrl.myDate" md-placeholder="Ngày hết hạn"></md-datepicker>
+                        </md-input-container>
+                    </div>
+                    
+                    <div layout-gt-sm="row">
+                        <div flex-gt-sm class="c-sub-title">
+                            Trình độ/Bằng cấp
+                        </div>
+                    </div>
+                    <md-divider class="c-dashed"></md-divider>
+                    <div layout-gt-sm="row">
+                        <md-input-container class="md-block c-input-height" flex-gt-sm>
+                          <label>Trình độ văn hóa</label>
+                          <input ng-model="user.city">
+                        </md-input-container>
+                        <md-input-container class="md-block c-input-height" flex-gt-sm>
+                          <label>Trình độ đào tạo</label>
+                          <input ng-model="user.city">
+                        </md-input-container>
+                        <md-input-container class="md-block c-input-height" flex-gt-sm>
+                          <label>Nơi đào tạo</label>
+                          <input ng-model="user.city">
+                        </md-input-container>
+                    </div>
+                    <div layout-gt-sm="row">
+                        <md-input-container class="md-block c-input-height" flex-gt-sm>
+                          <label>Chuyên nghành</label>
+                          <input ng-model="user.city">
+                        </md-input-container>
+                        <md-input-container class="md-block c-input-height" flex-gt-sm>
+                          <md-datepicker ng-model="ctrl.myDate" md-placeholder="Năm tốt nghiệp"></md-datepicker>
+                        </md-input-container>
+                        <md-input-container class="md-block c-input-height" flex-gt-sm>
+                          <label>Sếp loại</label>
+                          <input ng-model="user.city">
+                        </md-input-container>
+                    </div>
+                    <div layout-gt-sm="row">
+                        <div flex-gt-sm class="c-sub-title">
+                            Thành phần gia đình
+                        </div>
+                    </div>
+                    <md-divider class="c-dashed"></md-divider>
+                    <div layout-gt-sm="row">
+                        <md-input-container class="md-block c-input-height" flex-gt-sm>
+                          <label>Tình trạng hôn nhân</label>
+                          <input ng-model="user.city">
+                        </md-input-container>
+                        <md-input-container class="md-block c-input-height" flex-gt-sm>
+                          <label>TP gia đình</label>
+                          <input ng-model="user.city">
+                        </md-input-container>
+                        <md-input-container class="md-block c-input-height" flex-gt-sm>
+                          <label>TP bản thân</label>
+                          <input ng-model="user.city">
+                        </md-input-container>
+                    </div>
+                    <div layout-gt-sm="row">
+                        <md-input-container class="md-block c-input-height" flex-gt-sm>
+                          <label>Dân tộc</label>
+                          <input ng-model="user.city">
+                        </md-input-container>
+                        <md-input-container class="md-block c-input-height" flex-gt-sm>
+                          <label>Tôn giáo</label>
+                          <input ng-model="user.city">
+                        </md-input-container>
+                        <md-input-container class="md-block c-input-height" flex-gt-sm>
+                          <label>Quốc tịch</label>
+                          <input ng-model="user.city">
+                        </md-input-container>
+                    </div>
+                </md-card-content>
+           </md-card>
+            <md-card md-theme="dark-blue" md-theme-watch>  
+                <md-card-header class="c-card-header">
+                    <md-card-header-text>
+                      <span class="md-title">Thông tin liên hệ</span>
+                    </md-card-header-text>
+                </md-card-header>
+                <md-card-content class="c-content-padding">
+                    <div layout-gt-sm="row">
+                        <md-input-container class="md-block c-input-height" flex-gt-sm>
+                          <label>Điện thoại di động</label>
+                          <input ng-model="user.city">
+                        </md-input-container>
+                        <md-input-container class="md-block c-input-height" flex-gt-sm>
+                          <label>Điện thoại cơ quan</label>
+                          <input ng-model="user.city">
+                        </md-input-container>    
+                        <md-input-container class="md-block c-input-height" flex-gt-sm>
+                          <label>Điện thoại nhà riêng</label>
+                          <input ng-model="user.city">
+                        </md-input-container>
+                    </div> 
+                    <div layout-gt-sm="row">
+                        <md-input-container class="md-block c-input-height" flex-gt-sm>
+                          <label>Email cá nhân</label>
+                          <input ng-model="user.city">
+                        </md-input-container>
+                        <md-input-container class="md-block c-input-height" flex-gt-sm>
+                          <label>Email cơ quan</label>
+                          <input ng-model="user.city">
+                        </md-input-container>
+                        <md-input-container class="md-block c-input-height" flex-gt-sm>
+                          <label>Email khác</label>
+                          <input ng-model="user.city">
+                        </md-input-container>
+                    </div> 
+                    <div layout-gt-sm="row">
+                        <md-input-container class="md-block c-input-height" flex-gt-sm>
+                          <label>Facebook</label>
+                          <input ng-model="user.city">
+                        </md-input-container>
+                        <md-input-container class="md-block c-input-height" flex-gt-sm>
+                          <label>Skype</label>
+                          <input ng-model="user.city">
+                        </md-input-container>
+                        <md-input-container class="md-block c-input-height" flex-gt-sm>
+                          <label>Zalo</label>
+                          <input ng-model="user.city">
+                        </md-input-container>
+                    </div>
+                    <div layout-gt-sm="row">
+                        <div flex-gt-sm class="c-sub-title">
+                            Hộ khẩu thường trú
+                        </div>
+                        <div flex-gt-sm class="c-sub-title">
+                            Chổ ở hiện nay
+                        </div>
+                    </div>
+                    <md-divider class="c-dashed"></md-divider>
+                    <div layout-gt-sm="row">
+                        <md-input-container class="md-block c-input-height" flex-gt-sm>
+                          <label>Địa chỉ</label>
+                          <input ng-model="user.city">
+                        </md-input-container>
+                        <md-input-container class="md-block c-input-height" flex-gt-sm>
+                          <label>Địa chỉ</label>
+                          <input ng-model="user.city">
+                        </md-input-container>
+                    </div>
+                    <div layout-gt-sm="row">
+                        <md-input-container class="md-block c-input-height" flex-gt-sm>
+                          <label>Quốc gia</label>
+                          <input ng-model="user.city">
+                        </md-input-container>
+                        <md-input-container class="md-block c-input-height" flex-gt-sm>
+                          <label>Quốc gia</label>
+                          <input ng-model="user.city">
+                        </md-input-container>
+                    </div>
+                    <div layout-gt-sm="row">
+                        <md-input-container class="md-block c-input-height" flex-gt-sm>
+                          <label>Tỉnh/thành phố</label>
+                          <input ng-model="user.city">
+                        </md-input-container>
+                        <md-input-container class="md-block c-input-height" flex-gt-sm>
+                          <label>Tỉnh/thành phố</label>
+                          <input ng-model="user.city">
+                        </md-input-container>
+                    </div>
+                    <div layout-gt-sm="row">
+                        <md-input-container class="md-block c-input-height" flex-gt-sm>
+                          <label>Quận/huyện</label>
+                          <input ng-model="user.city">
+                        </md-input-container>
+                        <md-input-container class="md-block c-input-height" flex-gt-sm>
+                          <label>Quận/huyện</label>
+                          <input ng-model="user.city">
+                        </md-input-container>
+                    </div>
+                    <div layout-gt-sm="row">
+                        <md-input-container class="md-block c-input-height" flex-gt-sm>
+                          <label>Xã/phường</label>
+                          <input ng-model="user.city">
+                        </md-input-container>
+                        <md-input-container class="md-block c-input-height" flex-gt-sm>
+                          <label>Xã/phường</label>
+                          <input ng-model="user.city">
+                        </md-input-container>
+                    </div>
+                </md-card-content>
+           </md-card>
+            <md-card md-theme="dark-blue" md-theme-watch>  
+                <md-card-header class="c-card-header">
+                    <md-card-header-text>
+                      <span class="md-title">Thông tin công việc</span>
+                    </md-card-header-text>
+                </md-card-header>
+                <md-card-content class="c-content-padding">
+                    <div layout-gt-sm="row">
+                        <md-input-container class="md-block c-input-height" flex-gt-sm>
+                          <label>Vị trí công việc</label>
+                          <input ng-model="user.city">
+                        </md-input-container>
+                        <md-input-container class="md-block c-input-height" flex-gt-sm>
+                          <label>Chức danh </label>
+                          <input ng-model="user.city">
+                        </md-input-container>    
+                        <md-input-container class="md-block c-input-height" flex-gt-sm>
+                          <label>Cấp</label>
+                          <input ng-model="user.city">
+                        </md-input-container>
+                        <md-input-container class="md-block c-input-height" flex-gt-sm>
+                          <label>Bậc</label>
+                          <input ng-model="user.city">
+                        </md-input-container>
+                    </div> 
+                    <div layout-gt-sm="row">
+                        <md-input-container class="md-block c-input-height" flex-gt-sm>
+                          <label>Số sổ QL lao động</label>
+                          <input ng-model="user.city">
+                        </md-input-container>
+                        <md-input-container class="md-block c-input-height" flex-gt-sm>
+                          <label>Đơn vị công tác</label>
+                          <input ng-model="user.city">
+                        </md-input-container>
+                        <md-input-container class="md-block c-input-height" flex-gt-sm>
+                          <label>Quản lý trực tiếp</label>
+                          <input ng-model="user.city">
+                        </md-input-container>
+                        <md-input-container class="md-block c-input-height" flex-gt-sm>
+                          <label>Quản lí gián tiếp</label>
+                          <input ng-model="user.city">
+                        </md-input-container>
+                    </div> 
+                    <div layout-gt-sm="row">
+                        <md-input-container class="md-block c-input-height" flex-gt-sm>
+                          <label>Loại hợp đồng</label>
+                          <input ng-model="user.city">
+                        </md-input-container>
+                        <md-input-container class="md-block c-input-height" flex-gt-sm>
+                          <label>Trạng thái</label>
+                          <input ng-model="user.city">
+                        </md-input-container>
+                        <md-input-container class="md-block c-input-height" flex-gt-sm>
+                          <md-datepicker ng-model="ctrl.myDate" md-placeholder="Ngày thử việc"></md-datepicker>
+                        </md-input-container>
+                        <md-input-container class="md-block c-input-height" flex-gt-sm>
+                          <md-datepicker ng-model="ctrl.myDate" md-placeholder="Ngày chính thức"></md-datepicker>
+                        </md-input-container>
+                        
+                    </div>
+                    <div layout-gt-sm="row">
+                        <div flex-gt-sm class="c-sub-title">
+                            Thông tin tài khoản ngân hàng
+                        </div>
+                    </div>
+                    <md-divider class="c-dashed"></md-divider>
+                    <div layout-gt-sm="row">
+                        <md-input-container class="md-block c-input-height" flex-gt-sm>
+                          <label>MST cá nhân</label>
+                          <input ng-model="user.city">
+                        </md-input-container>
+                        <md-input-container class="md-block c-input-height" flex-gt-sm>
+                          <label>Tài khoản</label>
+                          <input ng-model="user.city">
+                        </md-input-container>
+                        <md-input-container class="md-block c-input-height" flex-gt-sm>
+                          <label>Mở tại ngân hàng</label>
+                          <input ng-model="user.city">
+                        </md-input-container>
+                    </div>
+                    <div layout-gt-sm="row">
+                        <div flex-gt-sm class="c-sub-title">
+                            Thông tin lương
+                        </div>
+                        <div flex-gt-sm class="c-sub-title">
+                            Thông tin BHXH
+                        </div>
+                    </div>
+                    <md-divider class="c-dashed"></md-divider>
+                    <div layout-gt-sm="row">
+                        <md-input-container class="md-block c-input-height" flex-gt-sm>
+                          <label>Bậc lương</label>
+                          <input ng-model="user.city">
+                        </md-input-container>
+                        <md-input-container class="md-block c-input-height" flex-gt-sm>
+                          <label>Số sổ BHXH</label>
+                          <input ng-model="user.city">
+                        </md-input-container>
+                    </div>
+                    <div layout-gt-sm="row">
+                        <md-input-container class="md-block c-input-height" flex-gt-sm>
+                          <label>Lương cơ bản</label>
+                          <input ng-model="user.city">
+                        </md-input-container>
+                        <md-input-container class="md-block c-input-height" flex-gt-sm>
+                          <md-datepicker ng-model="ctrl.myDate" md-placeholder="Ngày tham gia"></md-datepicker>
+                        </md-input-container>
+                    </div>
+                    <div layout-gt-sm="row">
+                        <md-input-container class="md-block c-input-height" flex-gt-sm>
+                          <label>Lương đóng BHXH</label>
+                          <input ng-model="user.city">
+                        </md-input-container>
+                        <md-input-container class="md-block c-input-height" flex-gt-sm>
+                          <label>Tỷ lệ đóng</label>
+                          <input ng-model="user.city">
+                        </md-input-container>
+                    </div>
+                    <div layout-gt-sm="row">
+                        <md-input-container class="md-block c-input-height" flex-gt-sm>
+                          <label>Số ngày phép</label>
+                          <input ng-model="user.city">
+                        </md-input-container>
+                        <md-input-container class="md-block c-input-height" flex-gt-sm>
+                          <label>Mã tỉnh cấp</label>
+                          <input ng-model="user.city">
+                        </md-input-container>
+                    </div>
+                    <div layout-gt-sm="row">
+                        <md-input-container class="md-block c-input-height" flex-gt-sm>
+                          <md-checkbox ng-model="data.cb1" aria-label="Checkbox 1"> Tham gia công đoàn
+                          </md-checkbox>
+                        </md-input-container>
+                        <md-input-container class="md-block c-input-height" flex-gt-sm>
+                        </md-input-container>
+                    </div>
+                    <div layout-gt-sm="row">
+                        <div flex-gt-sm class="c-sub-title">
+                            Thông tin BHYT
+                        </div>
+                    </div>
+                    <md-divider class="c-dashed"></md-divider>
+                    <div layout-gt-sm="row">
+                        <md-input-container class="md-block c-input-height" flex-gt-sm>
+                          <label>Số thẻ BHYT</label>
+                          <input ng-model="user.city">
+                        </md-input-container>
+                        <md-input-container class="md-block c-input-height" flex-gt-sm>
+                          <label>Nơi đăng kí KCB</label>
+                          <input ng-model="user.city">
+                        </md-input-container>
+                        <md-input-container class="md-block c-input-height" flex-gt-sm>
+                          <md-datepicker ng-model="ctrl.myDate" md-placeholder="Ngày bắt đầu"></md-datepicker>
+                        </md-input-container>
+                        <md-input-container class="md-block c-input-height" flex-gt-sm>
+                          <md-datepicker ng-model="ctrl.myDate" md-placeholder="Ngày hết hạn"></md-datepicker>
+                        </md-input-container>
+                    </div>
+                </md-card-content>
+           </md-card>
+        </md-content>
+    </div>
+    <div flex style="display:none">
+        <div style="height:500px" ui-grid-selection ui-grid-pagination ui-grid-resize-columns ui-grid-pinning ui-grid="gridOptions" class="grid"></div>
+    </div>
+</md-content>
+
+ 

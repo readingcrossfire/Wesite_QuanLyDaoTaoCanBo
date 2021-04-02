@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+       http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+
+    <mvc:annotation-driven/>
+    <context:component-scan base-package="com.javapointers.controllers"/>
+    <bean id="SessionFilter" class="com.javapointers.session.SessionFilter"/>
+    <bean id="NguoiDung" class="com.javapointers.models.NguoiDung"/>
+    <bean id="KhoaHoc" class="com.javapointers.models.KhoaHoc"/>
+    <bean id="LopHocVien" class="com.javapointers.models.LopHocVien"/>
+    <bean id="CanBo" class="com.javapointers.models.CanBo"/>
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="prefix">
+            <value>/WEB-INF/jsp/</value>
+        </property>
+        <property name="suffix">
+            <value>.jsp</value>
+        </property>
+    </bean>
+    <bean id="dbProperties"
+          class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="location">
+            <value>/WEB-INF/config_db.properties</value>
+        </property>
+    </bean>
+    <bean id="dataSource"
+          class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="oracle.jdbc.pool.OracleDataSource"/>
+        <property name="url" value="${db.url}"/>
+        <property name="username" value="his_thuctap_tgg"/>
+        <property name="password" value="${db.pass}"/>
+    </bean>
+    <mvc:interceptors>
+        <bean class="com.javapointers.session.SessionValidator"/>
+    </mvc:interceptors>
+    <mvc:resources mapping="/resources/**" location="/resources/theme/"/>
+
+</beans>
